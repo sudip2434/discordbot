@@ -12,6 +12,9 @@ client.on('message', msg => {
       msg.reply('pong');
     }
     if (msg.content === 'censor') {
-        msg.reply('pSorry please no profanity in this server');
+        msg.reply('Sorry please no profanity in this server');
+    }
+    if (msg.content === 'testing') {
+        msg.reply('testing complete, your bot is functional');
     }
 });
