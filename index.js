@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
-const client = new Discord. Client();
-const token = require('./conf.json');
+const client = new Discord.Client();
+//const token = require('./conf.json');
 
-client.login(token.token);
+client.login(process.env.BOT_TOKEN);
 // console.log(token)
 client.on('ready',() => {
     console.log('Logged in as ' + client.user.tag);
